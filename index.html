@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Reto2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    </head>
+    <body>
+    <fieldset style="width: 30%">
+            <legend>Datos cabaña, clientes y mensajes</legend>
+    <h1> Cabaña </h1>
+    <div id="resultado"> </div>
+    <div>
+    <input type="number" id="id" placeholder="id">
+    <input type="text" id="brand" placeholder="brand">
+    <input type="number" id="rooms" placeholder="rooms">
+    <input type="number" id="category_id" placeholder="category_id">
+    <input type="text" id="name" placeholder="name">
+</div>
+
+<button onclick="traerInformacion()"> Consultar </button>
+<button onclick="guardarInformacion()">Guardar!</button>
+<button onclick="editarInformacion()">Actualizar!</button><br>
+
+    <h1>Clientes</h1>
+        <div>
+    <input type="number" id="id2" placeholder="id">
+    <input type="text" id="name2" placeholder="name">
+    <input type="text" id="email" placeholder="email">
+    <input type="number" id="age" placeholder="age">
+</div>
+    
+<button onclick="informacionCliente()"> Consultar </button>
+<button onclick="guardarNuevoCliente()">Guardar!</button>
+<button onclick="cambiarDatos()">Actualizar!</button><br>
+</br>
+
+<h1>Mensajes</h1>
+<div>
+    <input type="number" id="id3" placeholder="id">
+    <input type="text" id="messagetext" placeholder="messagetext">
+</div>
+<button onclick="historialMensajes()"> Consultar </button>
+<button onclick="guardarMensaje()">Guardar!</button>
+<button onclick="cambiarMensaje()">Actualizar!</button>
+
+</html>
